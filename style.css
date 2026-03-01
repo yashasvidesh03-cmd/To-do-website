@@ -1,0 +1,125 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVIGATION */
+nav.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  color: #eb4d4b;
+  font-weight: bold;
+}
+
+.nav-menu li {
+  display: inline;
+  margin-left: 25px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+
+/* HERO / HEADER */
+.hero-section {
+  background: #eb4d4b;
+  color: white;
+  padding: 120px 50px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero-section span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 30px;
+  background: white;
+  color: #eb4d4b;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* CONTENT SECTIONS */
+.content-section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+/* FEATURES */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.feature {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* PROJECT CARDS */
+.project-card {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 380px;
+  border-radius: 8px;
+  border-left: 4px solid #eb4d4b;
+  text-align: left;
+}
+
+/* FORM */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #eb4d4b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: white;
+  text-align: center;
+  padding: 15px;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
