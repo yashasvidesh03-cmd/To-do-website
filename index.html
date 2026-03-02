@@ -1,92 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Pro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav class="nav-container">
-  <h2 class="logo">YourName</h2>
-  <ul class="nav-menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<div class="app">
+  <h1>✅ Todo Pro</h1>
 
-<!-- HERO SECTION -->
-<header id="home" class="hero-section">
-  <div class="hero-content">
-    <h1>Hello, I'm <span>Your Name</span></h1>
-    <p>Web Developer | Portfolio Inspired by Modern UI</p>
-    <a href="#projects" class="btn-primary">View Projects</a>
-  </div>
-</header>
-
-<!-- ABOUT -->
-<section id="about" class="content-section">
-  <h2>About Me</h2>
-  <p>
-    I’m a BCA student and frontend developer focused on creating
-    responsive and well-designed web experiences.
-  </p>
-</section>
-
-<!-- FEATURES / SKILLS -->
-<section class="features-section">
-  <div class="feature">
-    <h3>Web Design</h3>
-    <p>Clean and modern designs inspired by real apps.</p>
-  </div>
-  <div class="feature">
-    <h3>Responsive Layouts</h3>
-    <p>Sites that look great on any device.</p>
-  </div>
-  <div class="feature">
-    <h3>Interactive UI</h3>
-    <p>Simple yet engaging user experience.</p>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="content-section">
-  <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>Todoist-Style Portfolio</h3>
-    <p>A portfolio inspired by Todoist, built with HTML & CSS.</p>
+  <!-- Input -->
+  <div class="input-group">
+    <input type="text" id="taskInput" placeholder="Add a task">
+    <input type="date" id="dateInput">
+    <select id="priorityInput">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button onclick="addTask()">Add</button>
   </div>
 
-  <div class="project-card">
-    <h3>Weather App</h3>
-    <p>Live weather app using API.</p>
+  <!-- Filters -->
+  <div class="filters">
+    <button onclick="filterTasks('all')">All</button>
+    <button onclick="filterTasks('active')">Active</button>
+    <button onclick="filterTasks('completed')">Completed</button>
   </div>
 
-  <div class="project-card">
-    <h3>To-Do List App</h3>
-    <p>Task manager with local storage.</p>
-  </div>
-</section>
+  <!-- Task List -->
+  <ul id="taskList"></ul>
+</div>
 
-<!-- CONTACT -->
-<section id="contact" class="content-section">
-  <h2>Contact Me</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required/>
-    <input type="email" placeholder="Your Email" required/>
-    <textarea placeholder="Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2026 Your Name | All Rights Reserved</p>
-</footer>
-
+<script src="script.js"></script>
 </body>
-          </html>
+</html>
